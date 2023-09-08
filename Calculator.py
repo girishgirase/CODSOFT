@@ -95,16 +95,3 @@ window.mainloop()
 
 
 
-# lambda keyword indicates the creation of a lambda function.
-# arguments are the input parameters or arguments that the lambda function can accept.
-# expression is a single Python expression that gets executed when the lambda function is called. The result of this expression is returned as the function's value.
-# Lambda functions are often used in situations where a small, one-time function is needed, such as when passing a function as an argument to another function (e.g., map, filter, or sorted) or when defining a simple function as part of a function call.
-
-# Here's an example of how a lambda function is used:
-
-# CODE:--
-# A lambda function that adds two numbers
-# add = lambda x, y: x + y
-
-# result = add(3, 4)  # Calls the lambda function
-# print(result)  # Output: 7
