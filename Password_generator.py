@@ -35,7 +35,7 @@ def main():
     if length <= 0:
         print("Password length should be a positive number.")
         return
-    if length >= 10:
+    elif length >= 10:
         print("Error.You have to enter no. in between 1-10!")
         return
 
