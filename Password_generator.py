@@ -11,6 +11,9 @@ def generate_password(length):
     chars += string.punctuation  # Special characters
     
     # Generate the password
+    # We use a list comprehension( ability to understand) to generate a list of length random characters by repeatedly choosing characters from the chars string. random.
+    # choice(chars) selects a random character from the chars string.
+    # ''.join(...) is used to join these random characters together into a single string, which becomes the generated password.
     password = ''.join(random.choice(chars) for _ in range(length))
     
     return password
@@ -31,6 +34,9 @@ def main():
     # If it is, we display an error message and exit the program since a valid password length should be a positive number.
     if length <= 0:
         print("Password length should be a positive number.")
+        return
+    if length >= 10:
+        print("Error.You have to enter no. in between 1-10!")
         return
 
     # Generate the password
